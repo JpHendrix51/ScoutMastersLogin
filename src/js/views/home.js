@@ -3,13 +3,31 @@ import rigoImage from "../../img/rigo-baby.jpg";
 import "../../styles/home.scss";
 
 export const Home = () => (
-	<div className="text-center mt-5">
-		<h1>Hello Rigo!</h1>
-		<p>
-			<img src={rigoImage} />
-		</p>
-		<a href="#" className="btn btn-success">
-			If you see this green button, bootstrap is working
-		</a>
+	<div className="container">
+		<form>
+			<div className="scout-masters-logo" />
+			<div className="sign-in">
+				<h2>Sign in</h2>
+			</div>
+			<div className="sign in">
+				<div className="form-group">
+					<label htmlFor="exampleInputEmail1">Username</label>
+					<input
+						type="email"
+						className="form-control"
+						id="exampleInputEmail1"
+						aria-describedby="emailHelp"
+						placeholder="Enter email"
+					/>
+				</div>
+				<div className="form-group">
+					<label htmlFor="exampleInputPassword1">Password</label>
+					<input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" />
+				</div>
+				<button type="submit" className="btn btn-danger">
+					Submit
+				</button>
+			</div>
+		</form>
 	</div>
 );
