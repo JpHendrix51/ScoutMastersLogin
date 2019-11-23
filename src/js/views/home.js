@@ -6,12 +6,11 @@ export const Home = () => (
 	<div className="container">
 		<form>
 			<div className="scout-masters-logo" />
-			<div className="sign-in">
+
+			<div className="sign-in d-flex flex-column align-items-center">
 				<h2>Sign in</h2>
-			</div>
-			<div className="sign in">
 				<div className="form-group">
-					<label htmlFor="exampleInputEmail1">Username</label>
+					<label htmlFor="exampleInputEmail1" />
 					<input
 						type="email"
 						className="form-control"
@@ -21,7 +20,7 @@ export const Home = () => (
 					/>
 				</div>
 				<div className="form-group">
-					<label htmlFor="exampleInputPassword1">Password</label>
+					<label htmlFor="exampleInputPassword1" />
 					<input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" />
 				</div>
 				<button type="submit" className="btn btn-danger">

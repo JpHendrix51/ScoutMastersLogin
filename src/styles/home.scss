@@ -5,7 +5,40 @@
     border-radius: 10px;
     border-style: solid;
     border-width: 2px;
-    border-color: #cb0022;
+    border-color: transparent;
     text-align:center;
     padding-top: 125px;
+}
+
+body, html {
+  height: 100%;
+}
+
+body {
+  /* The image used */
+  background-image: url("https://images.pexels.com/photos/1840320/pexels-photo-1840320.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+input[type="email"].form-control,
+button[type="submit"].btn,
+input[type="password"].form-control{
+    width: 275px;
+    height: 50px;
+}
+
+input[type="email"].form-control,
+input[type="password"].form-control{
+    border-radius: 1rem; 
+}
+
+button[type="submit"].btn{
+    border-radius: 1rem;
 }
